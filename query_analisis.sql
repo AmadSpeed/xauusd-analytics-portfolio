@@ -19,7 +19,19 @@ LIMIT 10;
 DELETE FROM xauusd_raw
 WHERE LEFT(time_raw, 10) < '2026-06-01';
 
+#mengubah format waktu dari 'T' menjadi spasi dan menghapus 'Z' dari kolom time_raw
+UPDATE xauusd_raw
+SET time_raw = REPLACE(REPLACE(time_raw, 'T', ' '), 'Z', '');
 SELECT * FROM xauusd_raw
-ORDER BY time_raw
+ORDER BY time_raw DESC
 LIMIT 10;
+
+#merubah tipe data semua kolom dari tabel xauusd_raw menjadi tipe data yang sesuai
+ALTER TABLE xauusd_raw
+MODIFY COLUMN time_raw DATETIME,
+MODIFY COLUMN open_price DECIMAL(10, 2),
+MODIFY COLUMN high_price DECIMAL(10, 2),
+MODIFY COLUMN low_price DECIMAL(10, 2),
+MODIFY COLUMN close_price DECIMAL(10, 2),
+MODIFY COLUMN volume DECIMAL(15, 2);
 
