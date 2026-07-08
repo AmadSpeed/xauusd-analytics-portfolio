@@ -10,7 +10,16 @@ CREATE TABLE IF NOT EXISTS xauusd_raw (
     volume VARCHAR(50)
 );
 
+#menampilkan 10 data terakhir dari tabel xauusd_raw
 SELECT * FROM xauusd_raw
-ORDER BY time_raw DESC
+ORDER BY time_raw
+LIMIT 10;
+
+#menghapus data yang lebih lama dari 1 Juni 2026
+DELETE FROM xauusd_raw
+WHERE LEFT(time_raw, 10) < '2026-06-01';
+
+SELECT * FROM xauusd_raw
+ORDER BY time_raw
 LIMIT 10;
 
