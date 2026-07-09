@@ -2,6 +2,16 @@
 
 Proyek ini berfokus pada pembangunan pipeline transformasi data (*Data Transformation*) dan rekayasa fitur (*Feature Engineering*) untuk pergerakan harga emas (XAUUSD) berbasis data intraday (interval 5 menit). Seluruh kalkulasi metrik teknikal dilakukan langsung di dalam database (SQL-level) untuk menghasilkan dataset yang matang, bersih, dan siap divisualisasikan menggunakan Tableau.
 
+## 📊 Data Source & Credit
+
+Dataset mentah yang digunakan dalam proyek ini diambil dari platform **Kaggle**. 
+
+* **Nama Dataset**: XAUUSD 5m OHLCV Metals Historical Data
+* **Sumber/Pembuat**: Ork.ad | Financial Data Provider
+* **Link Dataset**: https://www.kaggle.com/datasets/orkadd/xauusd-5m-ohlcv-metals-historical-data
+
+*Disclaimer: Dataset ini digunakan murni untuk kepentingan pembelajaran, pengembangan portofolio data engineering, dan simulasi visualisasi analitis.*
+
 ## 🚀 Fitur & Metrik yang Dikembangkan
 
 Dataset akhir yang dihasilkan (`xauusd_analysis_result.csv`) membawa beberapa fitur kalkulasi baru hasil transformasi dari data mentah (`xauusd_raw`):
