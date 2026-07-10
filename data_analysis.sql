@@ -1,4 +1,5 @@
 -- Active: 1783595233773@@127.0.0.1@3306@xauusd_5m
+CREATE VIEW xauusd_analysis_result AS
 WITH ranked_data AS (
     SELECT 
         DATE(time_raw) AS trade_date,
@@ -27,7 +28,6 @@ daily_market_stats AS (
     FROM ranked_data
     WHERE rn = 1
 )
-
 SELECT 
     r.time_raw AS trade_time,
     r.open_price,
