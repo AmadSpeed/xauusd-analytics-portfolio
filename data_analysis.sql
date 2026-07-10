@@ -1,3 +1,4 @@
+-- Active: 1783595233773@@127.0.0.1@3306@xauusd_5m
 WITH ranked_data AS (
     SELECT 
         DATE(time_raw) AS trade_date,
@@ -29,7 +30,11 @@ daily_market_stats AS (
 
 SELECT 
     r.time_raw AS trade_time,
+    r.open_price,
+    r.high_price,
+    r.low_price,
     r.close_price,
+    r.volume,
     d.daily_close,
     d.yesterday_close,
     d.daily_return_percentage,

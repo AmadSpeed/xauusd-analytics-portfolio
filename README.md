@@ -36,5 +36,5 @@ Dataset akhir yang dihasilkan (`xauusd_analysis_result.csv`) membawa beberapa fi
 ├── data_transformation.sql  # Kueri tahap awal pembersihan data
 ├── data_analysis.sql        # Kueri utama rekayasa fitur (Dua struktur CTE & Ekspor)
 ├── XAUUSD_5m.csv            # Dataset mentah per 5 menit (Source)
-├── xauusd_analisis_portfolio.csv # Dataset matang hasil ekspor pipeline (Ready for Tableau)
+├── xauusd_analysis_result.csv # Dataset matang hasil ekspor pipeline (Ready for Tableau)
 └── README.md                # Dokumentasi proyek

@@ -1,4 +1,4 @@
--- Active: 1783497928514@@127.0.0.1@3306@xauusd_5m
+-- Active: 1783595233773@@127.0.0.1@3306@xauusd_5m
 USE xauusd_5m;
 
 CREATE TABLE IF NOT EXISTS xauusd_raw (
