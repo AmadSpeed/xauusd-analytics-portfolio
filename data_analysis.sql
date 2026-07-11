@@ -1,4 +1,4 @@
--- Active: 1783595233773@@127.0.0.1@3306@xauusd_5m
+-- Active: 1783497928514@@127.0.0.1@3306@xauusd_5m
 CREATE VIEW xauusd_analysis_result AS
 WITH ranked_data AS (
     SELECT 
@@ -9,7 +9,7 @@ WITH ranked_data AS (
         low_price,
         close_price,
         volume,
-        ROW_NUMBER() OVER (PARTITION BY DATE(time_raw) ORDER BY time_raw DESC) AS rn
+        ROW_NUMBER() OVER (PARTITION BY DATE(time_raw) ORDER BY time_raw DESC) AS rn_close,
     FROM xauusd_raw
 ),
 
@@ -26,7 +26,7 @@ daily_market_stats AS (
             0
         ) AS daily_return_percentage
     FROM ranked_data
-    WHERE rn = 1
+    WHERE rn_close = 1
 )
 SELECT 
     r.time_raw AS trade_time,
@@ -45,3 +45,4 @@ SELECT
 FROM ranked_data r
 JOIN daily_market_stats d ON r.trade_date = d.trade_date
 ORDER BY r.time_raw DESC;
+

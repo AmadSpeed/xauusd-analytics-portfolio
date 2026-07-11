@@ -1,0 +1,761 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20262.26.0603.1643                               -->
+<workbook original-version='18.1' source-build='2026.2.0 (20262.26.0603.1643)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='xauusd_analysis_result+' inline='true' name='federated.1qod1qt1wcii1a18lp2r61bnabyt' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='xauusd_analysis_result' name='textscan.0i959260ogxhtx13jgdyq02zb6ko'>
+            <connection class='textscan' directory='C:/Users/arahm/OneDrive/Projek Pribadi/xauusd-analytics-portfolio' filename='xauusd_analysis_result.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0i959260ogxhtx13jgdyq02zb6ko' name='xauusd_analysis_result.csv' table='[xauusd_analysis_result#csv]' type='table'>
+          <columns character-set='UTF-8' header='no' locale='en_US' separator=','>
+            <column datatype='datetime' name='F1' ordinal='0' />
+            <column datatype='real' name='F2' ordinal='1' />
+            <column datatype='real' name='F3' ordinal='2' />
+            <column datatype='real' name='F4' ordinal='3' />
+            <column datatype='real' name='F5' ordinal='4' />
+            <column datatype='real' name='F6' ordinal='5' />
+            <column datatype='real' name='F7' ordinal='6' />
+            <column datatype='real' name='F8' ordinal='7' />
+            <column datatype='real' name='F9' ordinal='8' />
+            <column datatype='real' name='F10' ordinal='9' />
+            <column datatype='real' name='F11' ordinal='10' />
+            <column datatype='real' name='F12' ordinal='11' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[xauusd_analysis_result.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;false&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[xauusd_analysis_result.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[xauusd_analysis_result.csv_6C80395C285E4BEC8614F920D1FBA7B0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F2</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[F2]</local-name>
+            <parent-name>[xauusd_analysis_result.csv]</parent-name>
+            <remote-alias>F2</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[xauusd_analysis_result.csv_6C80395C285E4BEC8614F920D1FBA7B0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F3</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[F3]</local-name>
+            <parent-name>[xauusd_analysis_result.csv]</parent-name>
+            <remote-alias>F3</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[xauusd_analysis_result.csv_6C80395C285E4BEC8614F920D1FBA7B0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F4</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[F4]</local-name>
+            <parent-name>[xauusd_analysis_result.csv]</parent-name>
+            <remote-alias>F4</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[xauusd_analysis_result.csv_6C80395C285E4BEC8614F920D1FBA7B0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F5</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[F5]</local-name>
+            <parent-name>[xauusd_analysis_result.csv]</parent-name>
+            <remote-alias>F5</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[xauusd_analysis_result.csv_6C80395C285E4BEC8614F920D1FBA7B0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F6</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[F6]</local-name>
+            <parent-name>[xauusd_analysis_result.csv]</parent-name>
+            <remote-alias>F6</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[xauusd_analysis_result.csv_6C80395C285E4BEC8614F920D1FBA7B0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F7</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[F7]</local-name>
+            <parent-name>[xauusd_analysis_result.csv]</parent-name>
+            <remote-alias>F7</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[xauusd_analysis_result.csv_6C80395C285E4BEC8614F920D1FBA7B0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F8</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[F8]</local-name>
+            <parent-name>[xauusd_analysis_result.csv]</parent-name>
+            <remote-alias>F8</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[xauusd_analysis_result.csv_6C80395C285E4BEC8614F920D1FBA7B0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F9</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[F9]</local-name>
+            <parent-name>[xauusd_analysis_result.csv]</parent-name>
+            <remote-alias>F9</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[xauusd_analysis_result.csv_6C80395C285E4BEC8614F920D1FBA7B0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F10</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[F10]</local-name>
+            <parent-name>[xauusd_analysis_result.csv]</parent-name>
+            <remote-alias>F10</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[xauusd_analysis_result.csv_6C80395C285E4BEC8614F920D1FBA7B0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F11</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[F11]</local-name>
+            <parent-name>[xauusd_analysis_result.csv]</parent-name>
+            <remote-alias>F11</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[xauusd_analysis_result.csv_6C80395C285E4BEC8614F920D1FBA7B0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F12</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[F12]</local-name>
+            <parent-name>[xauusd_analysis_result.csv]</parent-name>
+            <remote-alias>F12</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[xauusd_analysis_result.csv_6C80395C285E4BEC8614F920D1FBA7B0]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='open-close' datatype='real' name='[Calculation_0039054431842304]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[F2]- [F7]' />
+      </column>
+      <column caption='(close-open) &gt; 0?' datatype='boolean' name='[Calculation_0039054432374785]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='[Calculation_0039054431842304] &gt; 0' />
+      </column>
+      <column caption='F1 (XAUUSD 5m.csv)' datatype='string' hidden='true' name='[F1 (XAUUSD_5m.csv)]' role='dimension' type='nominal' />
+      <column caption='ma1hour' datatype='real' name='[F10]' role='measure' type='quantitative' />
+      <column caption='ma12hour' datatype='real' name='[F11]' role='measure' type='quantitative' />
+      <column caption='volume_intensity_precentage' datatype='real' name='[F12]' role='measure' type='quantitative' />
+      <column caption='trade_time' datatype='datetime' name='[F1]' role='dimension' type='ordinal' />
+      <column caption='open_price' datatype='real' name='[F2]' role='measure' type='quantitative' />
+      <column caption='high_price' datatype='real' name='[F3]' role='measure' type='quantitative' />
+      <column caption='low_price' datatype='real' name='[F4]' role='measure' type='quantitative' />
+      <column caption='close_price' datatype='real' name='[F5]' role='measure' type='quantitative' />
+      <column caption='volume' datatype='real' name='[F6]' role='measure' type='quantitative' />
+      <column caption='daily_close' datatype='real' name='[F7]' role='measure' type='quantitative' />
+      <column caption='yesterday_close' datatype='real' name='[F8]' role='measure' type='quantitative' />
+      <column caption='daily_return_precentage' datatype='real' name='[F9]' role='measure' type='quantitative' />
+      <column caption='xauusd_analysis_result.csv' datatype='table' name='[__tableau_internal_object_id__].[xauusd_analysis_result.csv_6C80395C285E4BEC8614F920D1FBA7B0]' role='measure' type='quantitative' />
+      <column-instance column='[Calculation_0039054432374785]' derivation='Attribute' name='[attr:Calculation_0039054432374785:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Calculation_0039054432374785]' derivation='None' name='[none:Calculation_0039054432374785:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Calculation_0039054432374785]' derivation='User' name='[usr:Calculation_0039054432374785:nk]' pivot='key' type='nominal' />
+      <extract count='-1' enabled='true' object-id='' units='records' user-specific='false'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/arahm/AppData/Local/Temp/TableauTemp/#TableauTemp_101u5kf0az9lv50znvyjm18unm6r.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='07/10/2026 04:04:57 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>F1</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[F1]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F1</remote-alias>
+              <ordinal>0</ordinal>
+              <family>xauusd_analysis_result.csv</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>6792</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[xauusd_analysis_result.csv_6C80395C285E4BEC8614F920D1FBA7B0]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>F2</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[F2]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F2</remote-alias>
+              <ordinal>1</ordinal>
+              <family>xauusd_analysis_result.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4355</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[xauusd_analysis_result.csv_6C80395C285E4BEC8614F920D1FBA7B0]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>F3</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[F3]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F3</remote-alias>
+              <ordinal>2</ordinal>
+              <family>xauusd_analysis_result.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3964</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[xauusd_analysis_result.csv_6C80395C285E4BEC8614F920D1FBA7B0]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>F4</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[F4]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F4</remote-alias>
+              <ordinal>3</ordinal>
+              <family>xauusd_analysis_result.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3833</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[xauusd_analysis_result.csv_6C80395C285E4BEC8614F920D1FBA7B0]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>F5</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[F5]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F5</remote-alias>
+              <ordinal>4</ordinal>
+              <family>xauusd_analysis_result.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3767</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[xauusd_analysis_result.csv_6C80395C285E4BEC8614F920D1FBA7B0]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>F6</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[F6]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F6</remote-alias>
+              <ordinal>5</ordinal>
+              <family>xauusd_analysis_result.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2805</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[xauusd_analysis_result.csv_6C80395C285E4BEC8614F920D1FBA7B0]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>F7</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[F7]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F7</remote-alias>
+              <ordinal>6</ordinal>
+              <family>xauusd_analysis_result.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>29</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[xauusd_analysis_result.csv_6C80395C285E4BEC8614F920D1FBA7B0]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>F8</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[F8]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F8</remote-alias>
+              <ordinal>7</ordinal>
+              <family>xauusd_analysis_result.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>28</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[xauusd_analysis_result.csv_6C80395C285E4BEC8614F920D1FBA7B0]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>F9</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[F9]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F9</remote-alias>
+              <ordinal>8</ordinal>
+              <family>xauusd_analysis_result.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>29</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[xauusd_analysis_result.csv_6C80395C285E4BEC8614F920D1FBA7B0]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>F10</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[F10]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F10</remote-alias>
+              <ordinal>9</ordinal>
+              <family>xauusd_analysis_result.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>6058</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[xauusd_analysis_result.csv_6C80395C285E4BEC8614F920D1FBA7B0]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>F11</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[F11]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F11</remote-alias>
+              <ordinal>10</ordinal>
+              <family>xauusd_analysis_result.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>6792</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[xauusd_analysis_result.csv_6C80395C285E4BEC8614F920D1FBA7B0]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>F12</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[F12]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F12</remote-alias>
+              <ordinal>11</ordinal>
+              <family>xauusd_analysis_result.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2918</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[xauusd_analysis_result.csv_6C80395C285E4BEC8614F920D1FBA7B0]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[usr:Calculation_0039054432374785:nk]' type='palette'>
+            <map to='#59a14f'>
+              <bucket>true</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>false</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[attr:Calculation_0039054432374785:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>%many-values%</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>true</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>false</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Calculation_0039054432374785:nk]' type='palette'>
+            <map to='#59a14f'>
+              <bucket>true</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>false</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Indonesia&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='xauusd_analysis_result.csv' id='xauusd_analysis_result.csv_6C80395C285E4BEC8614F920D1FBA7B0'>
+            <properties context=''>
+              <relation connection='textscan.0i959260ogxhtx13jgdyq02zb6ko' name='xauusd_analysis_result.csv' table='[xauusd_analysis_result#csv]' type='table'>
+                <columns character-set='UTF-8' header='no' locale='en_US' separator=','>
+                  <column datatype='datetime' name='F1' ordinal='0' />
+                  <column datatype='real' name='F2' ordinal='1' />
+                  <column datatype='real' name='F3' ordinal='2' />
+                  <column datatype='real' name='F4' ordinal='3' />
+                  <column datatype='real' name='F5' ordinal='4' />
+                  <column datatype='real' name='F6' ordinal='5' />
+                  <column datatype='real' name='F7' ordinal='6' />
+                  <column datatype='real' name='F8' ordinal='7' />
+                  <column datatype='real' name='F9' ordinal='8' />
+                  <column datatype='real' name='F10' ordinal='9' />
+                  <column datatype='real' name='F11' ordinal='10' />
+                  <column datatype='real' name='F12' ordinal='11' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 2'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='xauusd_analysis_result+' name='federated.1qod1qt1wcii1a18lp2r61bnabyt' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1qod1qt1wcii1a18lp2r61bnabyt'>
+            <column caption='open-close' datatype='real' name='[Calculation_0039054431842304]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[F2]- [F7]' />
+            </column>
+            <column caption='(close-open) &gt; 0?' datatype='boolean' name='[Calculation_0039054432374785]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='[Calculation_0039054431842304] &gt; 0' />
+            </column>
+            <column caption='trade_time' datatype='datetime' name='[F1]' role='dimension' type='ordinal' />
+            <column caption='open_price' datatype='real' name='[F2]' role='measure' type='quantitative' />
+            <column caption='daily_close' datatype='real' name='[F7]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_0039054431842304]' derivation='Avg' name='[avg:Calculation_0039054431842304:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[F2]' derivation='Avg' name='[avg:F2:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[F7]' derivation='Max' name='[max:F7:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_0039054432374785]' derivation='None' name='[none:Calculation_0039054432374785:nk]' pivot='key' type='nominal' />
+            <column-instance column='[F1]' derivation='Day-Trunc' name='[tdy:F1:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1qod1qt1wcii1a18lp2r61bnabyt].[tdy:F1:ok]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[tdy:F1:ok]' member='#2026-06-01 00:00:00#' />
+              <groupfilter function='member' level='[tdy:F1:ok]' member='#2026-06-02 00:00:00#' />
+              <groupfilter function='member' level='[tdy:F1:ok]' member='#2026-06-03 00:00:00#' />
+              <groupfilter function='member' level='[tdy:F1:ok]' member='#2026-06-04 00:00:00#' />
+              <groupfilter function='member' level='[tdy:F1:ok]' member='#2026-06-05 00:00:00#' />
+              <groupfilter function='member' level='[tdy:F1:ok]' member='#2026-06-07 00:00:00#' />
+              <groupfilter function='member' level='[tdy:F1:ok]' member='#2026-06-08 00:00:00#' />
+              <groupfilter function='member' level='[tdy:F1:ok]' member='#2026-06-09 00:00:00#' />
+              <groupfilter function='member' level='[tdy:F1:ok]' member='#2026-06-10 00:00:00#' />
+              <groupfilter function='member' level='[tdy:F1:ok]' member='#2026-06-11 00:00:00#' />
+              <groupfilter function='member' level='[tdy:F1:ok]' member='#2026-06-12 00:00:00#' />
+              <groupfilter function='member' level='[tdy:F1:ok]' member='#2026-06-14 00:00:00#' />
+              <groupfilter function='member' level='[tdy:F1:ok]' member='#2026-06-15 00:00:00#' />
+              <groupfilter function='member' level='[tdy:F1:ok]' member='#2026-06-16 00:00:00#' />
+              <groupfilter function='member' level='[tdy:F1:ok]' member='#2026-06-17 00:00:00#' />
+              <groupfilter function='member' level='[tdy:F1:ok]' member='#2026-06-18 00:00:00#' />
+              <groupfilter function='member' level='[tdy:F1:ok]' member='#2026-06-19 00:00:00#' />
+              <groupfilter function='member' level='[tdy:F1:ok]' member='#2026-06-21 00:00:00#' />
+              <groupfilter function='member' level='[tdy:F1:ok]' member='#2026-06-22 00:00:00#' />
+              <groupfilter function='member' level='[tdy:F1:ok]' member='#2026-06-23 00:00:00#' />
+              <groupfilter function='member' level='[tdy:F1:ok]' member='#2026-06-24 00:00:00#' />
+              <groupfilter function='member' level='[tdy:F1:ok]' member='#2026-06-25 00:00:00#' />
+              <groupfilter function='member' level='[tdy:F1:ok]' member='#2026-06-26 00:00:00#' />
+              <groupfilter function='member' level='[tdy:F1:ok]' member='#2026-06-28 00:00:00#' />
+              <groupfilter function='member' level='[tdy:F1:ok]' member='#2026-06-29 00:00:00#' />
+              <groupfilter function='member' level='[tdy:F1:ok]' member='#2026-06-30 00:00:00#' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1qod1qt1wcii1a18lp2r61bnabyt].[tdy:F1:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1qod1qt1wcii1a18lp2r61bnabyt].[avg:F2:qk]' field-type='quantitative' max='4638.3715730455115' min='3116.4926410353996' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='5' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='GanttBar' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1qod1qt1wcii1a18lp2r61bnabyt].[none:Calculation_0039054432374785:nk]' />
+              <size column='[federated.1qod1qt1wcii1a18lp2r61bnabyt].[avg:Calculation_0039054431842304:qk]' />
+              <lod column='[federated.1qod1qt1wcii1a18lp2r61bnabyt].[max:F7:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.9890055656433105' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1qod1qt1wcii1a18lp2r61bnabyt].[avg:F2:qk]</rows>
+        <cols>[federated.1qod1qt1wcii1a18lp2r61bnabyt].[tdy:F1:ok]</cols>
+      </table>
+      <simple-id uuid='{5B8623D8-45EB-4656-A49A-3100BE9ECD58}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.5' source-height='44'>
+    <window class='worksheet' maximized='true' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.1qod1qt1wcii1a18lp2r61bnabyt].[none:Calculation_0039054432374785:nk]</field>
+            <field>[federated.1qod1qt1wcii1a18lp2r61bnabyt].[usr:Calculation_0039054432374785:nk]</field>
+            <field>[federated.1qod1qt1wcii1a18lp2r61bnabyt].[yr:F1:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{F545D219-08F7-4EA7-8D52-55E31D198309}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 2' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
