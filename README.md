@@ -14,7 +14,7 @@ Dataset mentah yang digunakan dalam proyek ini diambil dari platform **Kaggle**.
 
 ## 🚀 Fitur & Metrik yang Dikembangkan
 
-Dataset akhir yang dihasilkan (`xauusd_analysis_result.csv`) membawa beberapa fitur kalkulasi baru hasil transformasi dari data mentah (`xauusd_raw`):
+Dataset akhir yang dihasilkan (`xauusd_analys_daily.csv`) membawa beberapa fitur kalkulasi baru hasil transformasi dari data mentah (`xauusd_raw`):
 
 1. **`trade_date` & `trade_time`**: Pemisahan dan penyesuaian granularitas waktu untuk mempermudah pemfilteran berbasis deret waktu (*time-series*).
 2. **`daily_close`**: Menangkap harga penutupan harian sejati dengan menyaring baris menit terakhir (`rn = 1`) pada setiap tanggal menggunakan *Window Function* `ROW_NUMBER()`.
@@ -36,5 +36,5 @@ Dataset akhir yang dihasilkan (`xauusd_analysis_result.csv`) membawa beberapa fi
 ├── data_transformation.sql  # Kueri tahap awal pembersihan data
 ├── data_analysis.sql        # Kueri utama rekayasa fitur (Dua struktur CTE & Ekspor)
 ├── XAUUSD_5m.csv            # Dataset mentah per 5 menit (Source)
-├── xauusd_analysis_result.csv # Dataset matang hasil ekspor pipeline (Ready for Tableau)
+├── xauusd_analys_daily.csv # Dataset matang hasil ekspor pipeline (Ready for Tableau)
 └── README.md                # Dokumentasi proyek
