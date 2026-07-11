@@ -27,15 +27,23 @@ Dataset akhir yang dihasilkan (`xauusd_analys_daily.csv`) membawa beberapa fitur
 
 * **Database Engine**: MySQL / PostgreSQL
 * **IDE / Query Tool**: VS Code (dengan optimasi *Advanced Database Extensions*)
-* **Visualisasi Data**: Tableau (Koneksi via File Data / Live Extract)
+* **Visualisasi Data**: Tableau Public (Desktop App / Cloud Web Authoring)
 * **Bahasa**: SQL (Common Table Expressions / CTE, Window Functions, Agregasi Kontinu)
+
+## 📊 Interactive Dashboard Portfolio
+
+Dashboard analitik proyek ini telah diunggah dan dapat diakses secara interaktif. Dashboard ini menyajikan aksi harga *candlestick*, tren pergerakan indikator moving average, fluktuasi imbal hasil harian, hingga intensitas volume transaksi.
+
+* **Pratinjau Dashboard**: (Anda dapat menyertakan berkas gambar screenshot di sini jika ada, misal: `![Preview](dashboard_preview.png)`)
+* **Versi Interaktif**: 👉 [View Live Interactive Dashboard on Tableau Public](https://public.tableau.com/views/xauusddashboardanalytics/dashboardanalysisxauusd?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
 ## 📁 Struktur File Proyek
 
 ```text
-├── data_transformation.sql  # Kueri tahap awal pembersihan data
-├── data_analysis.sql  # Kueri utama rekayasa fitur (Dua struktur CTE & Ekspor)
-├── data_analys_daily.sql        # Kueri untuk merubah data menjadi bentuk daily format
-├── XAUUSD_5m.csv            # Dataset mentah per 5 menit (Source)
-├── xauusd_analys_daily.csv # Dataset matang hasil ekspor pipeline (Ready for Tableau)
-└── README.md                # Dokumentasi proyek
+├── data_transformation.sql       # Kueri tahap awal pembersihan data
+├── data_analysis.sql             # Kueri utama rekayasa fitur (Struktur CTE & Ekspor)
+├── data_analys_daily.sql         # Kueri untuk mengubah data menjadi bentuk daily format
+├── README.md                     # Dokumentasi proyek
+├── xauusd dashboard analytics.twbx # File Tableau Packaged Workbook (Desain & Data Tersemat)
+├── XAUUSD_5m.csv                 # Dataset mentah per 5 menit (Source)
+└── xauusd_analys_daily.csv       # Dataset matang hasil ekspor pipeline (Ready for Tableau)
