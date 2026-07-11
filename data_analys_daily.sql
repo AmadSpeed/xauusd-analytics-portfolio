@@ -48,7 +48,6 @@ SELECT
     d.daily_high,
     d.daily_low,
     d.daily_return_percentage,
-    -- Hitung MA dan intensitas volume pada data intraday murni
     AVG(r.close_price) OVER (ORDER BY r.time_raw ASC ROWS BETWEEN 11 PRECEDING AND CURRENT ROW) AS ma_1hour,
     AVG(r.close_price) OVER (ORDER BY r.time_raw ASC ROWS BETWEEN 143 PRECEDING AND CURRENT ROW) AS ma_12hour,
     ROUND((r.volume / AVG(r.volume) OVER(ORDER BY r.time_raw ASC ROWS BETWEEN 11 PRECEDING AND CURRENT ROW) * 100), 2) AS volume_intensity_percentage
