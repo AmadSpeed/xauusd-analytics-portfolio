@@ -34,7 +34,8 @@ Dataset akhir yang dihasilkan (`xauusd_analys_daily.csv`) membawa beberapa fitur
 
 ```text
 ├── data_transformation.sql  # Kueri tahap awal pembersihan data
-├── data_analysis.sql        # Kueri utama rekayasa fitur (Dua struktur CTE & Ekspor)
+├── data_analysis.sql  # Kueri utama rekayasa fitur (Dua struktur CTE & Ekspor)
+├── data_analys_daily.sql        # Kueri untuk merubah data menjadi bentuk daily format
 ├── XAUUSD_5m.csv            # Dataset mentah per 5 menit (Source)
 ├── xauusd_analys_daily.csv # Dataset matang hasil ekspor pipeline (Ready for Tableau)
 └── README.md                # Dokumentasi proyek
