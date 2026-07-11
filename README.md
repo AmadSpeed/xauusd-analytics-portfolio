@@ -34,7 +34,7 @@ Dataset akhir yang dihasilkan (`xauusd_analys_daily.csv`) membawa beberapa fitur
 
 Dashboard analitik proyek ini telah diunggah dan dapat diakses secara interaktif. Dashboard ini menyajikan aksi harga *candlestick*, tren pergerakan indikator moving average, fluktuasi imbal hasil harian, hingga intensitas volume transaksi.
 
-* **Pratinjau Dashboard**: (Anda dapat menyertakan berkas gambar screenshot di sini jika ada, misal: `![Preview](dashboard_preview.png)`)
+* **Pratinjau Dashboard**: (Anda dapat menyertakan berkas gambar screenshot di sini jika ada, misal: `![Preview]([dashboard_preview.png](https://github.com/AmadSpeed/xauusd-analytics-portfolio/blob/d2b02f496e0fb52a9530165d114e140900db5831/dashboard%20analysis%20xauusd.png))`)
 * **Versi Interaktif**: 👉 [View Live Interactive Dashboard on Tableau Public](https://public.tableau.com/views/xauusddashboardanalytics/dashboardanalysisxauusd?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
 ## 📁 Struktur File Proyek
